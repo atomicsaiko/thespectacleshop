@@ -7,7 +7,8 @@ FactoryGirl.define do
     strength_right  2.50
     shade           false
     price           318.22
-    
+    description     { Faker::Hipster.paragraph }
+
       trait :active do
             active true
           end
