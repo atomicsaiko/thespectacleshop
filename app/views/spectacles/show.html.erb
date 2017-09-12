@@ -1,0 +1,12 @@
+<div>
+  <h1><%= @spectacle.style %></h1>
+  <p><%= @spectacle.price %>
+    Euro</p>
+
+  <%= image_tag @spectacle.image %>
+</div>
+
+<div>
+  <%= link_to "Back", spectacles_path, class: "btn btn-outline" %>
+  <%= link_to "Purchase", spectacles_path, class: "btn btn-outline" %>
+</div>
