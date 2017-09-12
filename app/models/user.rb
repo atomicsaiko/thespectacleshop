@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_one :profile
+  has_one :basket
+  has_many :spectacles, through: :basket
 
   def has_profile?
     profile.present? && profile.persisted?
