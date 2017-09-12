@@ -1,0 +1,17 @@
+<h1>
+  Choose your favorite pair of Spectacle</h1>
+<div class="row">
+  <ul class="list-group">
+    <% @spectacles.each do | spectacle| %>
+    <div class="alert alert-info" role="alert">
+      <li class="list-group-item">
+        <%= link_to spectacle.style, spectacle_path(spectacle.id) %>
+        <%= spectacle.price %>
+        <div class="thumbnail">
+          <%= image_tag spectacle.image %>
+        </div>
+      </li>
+    </div>
+    <% end%>
+  </ul>
+</div>
