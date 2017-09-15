@@ -4,3 +4,16 @@
 img {
   max-width: 400px;
 }
+
+body {
+  background: { image: asset_url("wallpaper.jpg");
+  }
+}
+
+.jumbotron {
+  background-color: transparent
+}
+
+.jumbotron h1 {
+  color: white;
+}
