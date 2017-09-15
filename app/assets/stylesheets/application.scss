@@ -15,6 +15,10 @@ h1, h2, label, p {
   color: white;
 }
 
+h1 {
+  margin-top: 250px;
+}
+
 .jumbotron {
   background-color: transparent
 }
@@ -26,6 +30,7 @@ h1, h2, label, p {
 #MyCarousel {
   max-height: 500px;
   max-width: 500px;
+  margin-top: 250px;
 }
 
 .btn-primary {
@@ -45,3 +50,23 @@ a {
 .list-group-item {
 color: rgb(83, 84, 82);
 }
+
+// .col-one {
+//   margin-top: 500px;
+// }
+//
+// .col-two {
+//  margin-top: 300px;
+//  display: inline-block;
+// }
+// .row-centered {
+//   text-align: center;
+// }
+//
+// .col-centered {
+//   text-align: center;
+//   display: inline-block;
+//   float: none;
+//   text-align: right;
+//   margin-top: -4px;
+// }
