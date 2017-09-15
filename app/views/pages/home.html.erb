@@ -1,11 +1,18 @@
-<h1>The Spectacular Shop</h1>
 
-<div id="MyCarousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <% @spectacles.each_with_index do |spectacle, n| %>
-    <li data-target='#MyCarousel' data-slide-to="#{n}" class="#{'active' if n == 0}"></li>
-    <% end %>
-  </ol>
+<div class="row">
+  <div class="col-md-6">
+    <h1>The Spectacular Shop</h1>
+    <h2>Need a spectacular pair of specs? We've got what you need!</h2>
+    <%= link_to "Browse Styles", spectacles_path, class: "btn btn-primary"%>
+  </div>
+
+  <div class="col-md-6">
+  <div id="MyCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <% @spectacles.each_with_index do |spectacle, n| %>
+      <li data-target='#MyCarousel' data-slide-to="#{n}" class="#{'active' if n == 0}"></li>
+      <% end %>
+    </ol>
 
   <div class="carousel-inner" role="listbox">
     <% @spectacles.each_with_index do |spectacle, index| %>
@@ -25,5 +32,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
 
-<%= link_to "Browse Styles", spectacles_path, class: "btn btn-primary"%>
+
+<div class="row">

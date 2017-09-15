@@ -6,8 +6,13 @@ img {
 }
 
 body {
-  background: { image: asset_url("wallpaper.jpg");
+  background: {
+    image: asset_url("wallpaper.jpg");
   }
+}
+
+h1, h2, label, p {
+  color: white;
 }
 
 .jumbotron {
@@ -16,4 +21,9 @@ body {
 
 .jumbotron h1, h2, label, p {
   color: white;
+}
+
+#MyCarousel {
+  max-height: 500px;
+  max-width: 500px;
 }
