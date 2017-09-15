@@ -1,3 +1,4 @@
 class Spectacle < ApplicationRecord
 
+
 end
