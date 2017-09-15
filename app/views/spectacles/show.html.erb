@@ -1,6 +1,6 @@
 <div>
   <h1><%= @spectacle.style %></h1>
-  <p><%= @spectacle.price%>
+  <p><%= number_to_currency(@spectacle.price)%>
     Euro</p>
 
   <%= image_tag @spectacle.image %>
