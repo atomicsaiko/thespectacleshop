@@ -6,7 +6,7 @@
     <div class="alert alert-info" role="alert">
       <li class="list-group-item">
         <%= link_to spectacle.style, spectacle_path(spectacle.id) %>
-        <%= spectacle.price %>
+        <%= number_to_currency(spectacle.price) %>
         <div class="thumbnail">
           <%= image_tag spectacle.image %>
         </div>
