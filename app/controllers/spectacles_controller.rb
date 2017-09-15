@@ -2,7 +2,7 @@ class SpectaclesController < ApplicationController
 
   def index
     @spectacles = Spectacle.all
-
+    @basket = ShoppingBasket.new
   end
 
   # def new
@@ -11,11 +11,12 @@ class SpectaclesController < ApplicationController
 
   def show
     @spectacle = Spectacle.find(params[:id])
+    @basket = ShoppingBasket.new
   end
 
 
   private
-  
+
   def spectacle_params
     params
     .require(:spectacle)

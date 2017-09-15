@@ -1,5 +1,5 @@
 class ShoppingBasket
-
+  attr_reader :shopping_lines
 
   def initialize(session = {})
     @session = session

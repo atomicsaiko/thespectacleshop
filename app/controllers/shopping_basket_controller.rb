@@ -10,6 +10,7 @@ class ShoppingBasketController
 
     if shopping_basket.add_product(product, amount)
       puts "Awesome it works"
+      redirect_to spectacles_path
     else
       puts "Something's not right"
     end
