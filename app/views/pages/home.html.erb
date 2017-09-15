@@ -1,12 +1,11 @@
 
-<div class="row">
-  <div class="col-md-6">
+  <div class="col-md-6 col-one">
     <h1>The Spectacular Shop</h1>
     <h2>Need a spectacular pair of specs? We've got what you need!</h2>
     <%= link_to "Browse Styles", spectacles_path, class: "btn btn-primary"%>
   </div>
-
-  <div class="col-md-6">
+<div class="row row-two">
+  <div class="col-md-6 col-two">
   <div id="MyCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <% @spectacles.each_with_index do |spectacle, n| %>
