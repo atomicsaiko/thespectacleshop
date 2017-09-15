@@ -15,6 +15,7 @@ class SpectaclesController < ApplicationController
 
 
   private
+  
   def spectacle_params
     params
     .require(:spectacle)
